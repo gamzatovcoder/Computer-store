@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import Provider from "./app/provider/Provider";
 
 function App() {
-
-  return (
-    <>
-      
-    </>
-  )
+   return (
+      <>
+         <Provider />
+      </>
+   );
 }
 
-export default App
+export default App;
