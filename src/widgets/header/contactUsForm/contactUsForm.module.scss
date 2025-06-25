@@ -1,0 +1,61 @@
+@use "/src/shared/styles/colors";
+
+.form {
+   width: 280px;
+   padding: 0 20px;
+   padding-top: 17px;
+   padding-bottom: 24px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+   .form__title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: colors.$font-primary;
+      margin-bottom: 4px;
+   }
+   .form__info {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: colors.$font-primary;
+      margin-bottom: 8px;
+   }
+   .form__input-box {
+      margin-bottom: 10px;
+   }
+}
+
+.radio-list {
+   margin-bottom: 10px;
+   .radio-list__item {
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+   }
+}
+.radio-list__item-radio {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 7px;
+   width: 19px;
+   height: 19px;
+   appearance: none;
+   border: 1px solid colors.$font-tertiary;
+   border-radius: 50%;
+   &:checked:before {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: colors.$background-quaternary;
+      opacity: 1;
+   }
+}
+.radio-list__item-text {
+   font-weight: 500;
+   color: colors.$font-primary;
+}
+.submit-box {
+   width: 150px;
+}

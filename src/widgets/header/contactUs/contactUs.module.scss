@@ -1,0 +1,27 @@
+@use "/src/shared/styles/colors";
+
+.contactUsForm {
+   display: flex;
+}
+.contactUsForm__text {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: colors.$font-tertiary;
+   white-space: pre;
+}
+
+.form-toggle-box {
+   position: relative;
+   .form-toggle-box__toggle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: colors.$font-secondary;
+      border-bottom: 2px solid colors.$font-secondary;
+      cursor: pointer;
+      padding-bottom: 2px;
+   }
+   .form-toggle-box__form-box {
+      position: absolute;
+      top: 40px;
+   }
+}

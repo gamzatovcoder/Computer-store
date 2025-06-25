@@ -1,0 +1,12 @@
+@use "/src/shared/styles/colors";
+
+.list {
+   display: flex;
+   column-gap: 25px;
+}
+
+.item {
+   font-size: 1.4rem;
+   font-weight: 600;
+   color: colors.$font-primary;
+}

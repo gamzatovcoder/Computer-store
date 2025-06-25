@@ -1,0 +1,13 @@
+@use "/src/shared/styles/colors";
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   height: 37px;
+   width: 100%;
+   background-color: colors.$background-quaternary;
+   font-size: 1.4rem;
+   color: colors.$font-secondary;
+}

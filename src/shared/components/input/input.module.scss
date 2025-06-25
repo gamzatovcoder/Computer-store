@@ -1,0 +1,8 @@
+@use "/src/shared/styles/colors";
+
+.input {
+   font-size: 1.4rem;
+   padding: 0 14px;
+   height: 37px;
+   border: 1px solid colors.$font-tertiary;
+}

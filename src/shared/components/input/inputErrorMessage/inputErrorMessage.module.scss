@@ -1,0 +1,8 @@
+@use "/src/shared/styles/colors";
+
+.error-message {
+   font-size: 1.1rem;
+   font-weight: 400;
+   font-style: italic;
+   color: colors.$font-Quaternary;
+}

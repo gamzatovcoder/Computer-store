@@ -1,12 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Main from "@/pages/main/Main";
-
-const router = createBrowserRouter([{ path: "/", element: <Main /> }]);
-
+import Catalog from "@/pages/catalog/Catalog";
+import { Routes, Route } from "react-router-dom";
 const Provider = () => {
    return (
       <>
-         <RouterProvider router={router} />
+         <Routes>
+            <Route path="/catalog" element={<Catalog />} />
+         </Routes>
       </>
    );
 };

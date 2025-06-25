@@ -1,0 +1,53 @@
+@use "/src/shared/styles/colors";
+
+.header-top {
+   background-color: colors.$background-primary;
+}
+
+.header-top__content {
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-top__working-time {
+   color: colors.$font-tertiary;
+   font-size: 1.2rem;
+   font-weight: 600;
+   span {
+      color: colors.$font-secondary;
+   }
+}
+
+.our-contacts {
+   display: flex;
+   align-items: center;
+   .our-contacts__phone {
+      font-size: 1.2rem;
+      color: colors.$font-secondary;
+      font-weight: 600;
+      margin-right: 14px;
+   }
+}
+
+.our-contacts__messenger-icon {
+   height: 15.45px;
+   width: 15.45px;
+}
+
+.header-bottom {
+   display: flex;
+   align-items: center;
+   .header-bottom__logo {
+      width: 33.47px;
+      height: 40px;
+      margin-right: 56px;
+   }
+   .header-bottom__main-menu-box {
+      margin-right: auto;
+   }
+   .header-bottom__search-field-box {
+      margin-right: 30px;
+   }
+}

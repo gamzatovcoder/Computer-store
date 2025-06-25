@@ -1,0 +1,26 @@
+@use "/src/shared/styles/colors";
+
+.search-box {
+   display: flex;
+   align-items: center;
+   .search-box__input {
+      width: 300px;
+      height: 25px;
+      border: 2px solid colors.$font-tertiary;
+   }
+   .search-box__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      border: 2px solid colors.$font-tertiary;
+      border-left: none;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+   }
+}
+.search-box__button-icon {
+   width: 15px;
+   height: 15px;
+}
