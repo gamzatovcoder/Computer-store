@@ -1,9 +1,9 @@
 @use "/src/shared/styles/colors";
 
-.contactUsForm {
+.contact-us {
    display: flex;
 }
-.contactUsForm__text {
+.contact-us__text {
    font-size: 1.2rem;
    font-weight: 600;
    color: colors.$font-tertiary;

@@ -2,7 +2,7 @@ import styles from "./header.module.scss";
 import ContactUs from "./contactUs/ContactUs";
 import MainMenu from "./mainMenuList/MainMenu";
 import SearchField from "./searchField/SearchField";
-import Basket from "./basket/basket";
+import Basket from "./basket/Basket";
 import facebookIcon from "@/shared/assets/icons/facebook.png";
 import logoIcon from "@/shared/assets/icons/logo.png";
 
@@ -32,19 +32,21 @@ const Header = () => {
                </div>
             </div>
          </div>
-         <div className={styles["header-bottom"] + " container"}>
-            <img
-               className={styles["header-bottom__logo"]}
-               src={logoIcon}
-               alt="logo"
-            />
-            <div className={styles["header-bottom__main-menu-box"]}>
-               <MainMenu />
+         <div className={styles["header-bottom"]}>
+            <div className={styles["header-bottom__content"] + " container"}>
+               <img
+                  className={styles["header-bottom__logo"]}
+                  src={logoIcon}
+                  alt="logo"
+               />
+               <div className={styles["header-bottom__main-menu-box"]}>
+                  <MainMenu />
+               </div>
+               <div className={styles["header-bottom__search-field-box"]}>
+                  <SearchField />
+               </div>
+               <Basket />
             </div>
-            <div className={styles["header-bottom__search-field-box"]}>
-               <SearchField />
-            </div>
-            <Basket />
          </div>
       </header>
    );

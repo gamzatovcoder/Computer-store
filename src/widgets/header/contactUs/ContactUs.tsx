@@ -10,8 +10,8 @@ const ContactUs = () => {
    };
 
    return (
-      <div className={styles.contactUsForm}>
-         <div className={styles["contactUsForm__text"]}>
+      <div className={styles["contact-us"]}>
+         <div className={styles["contact-us__text"]}>
             Visit our showroom in 1234 Street Adress City Address, 1234{" "}
          </div>
          <div className={styles["form-toggle-box"]}>

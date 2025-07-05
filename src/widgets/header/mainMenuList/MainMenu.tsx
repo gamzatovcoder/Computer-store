@@ -21,15 +21,17 @@ const MainMenu = () => {
       },
    ];
    return (
-      <ul className={styles.list}>
-         {menuList.map((item) => (
-            <Link to={item.link}>
-               <li className={styles.item} key={item.link}>
-                  {item.value}
-               </li>
-            </Link>
-         ))}
-      </ul>
+      <nav>
+         <ul className={styles.list}>
+            {menuList.map((item) => (
+               <Link key={item.value} to={item.link}>
+                  <li className={styles.item} key={item.link}>
+                     {item.value}
+                  </li>
+               </Link>
+            ))}
+         </ul>
+      </nav>
    );
 };
 

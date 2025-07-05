@@ -11,6 +11,7 @@
    border: none;
    margin: 0;
    padding: 0;
+   overscroll-behavior: none;
 }
 *:focus {
    outline: none;
@@ -22,6 +23,7 @@ ul {
 }
 
 button {
+   font-family: fonts.$primary;
    cursor: pointer;
 }
 

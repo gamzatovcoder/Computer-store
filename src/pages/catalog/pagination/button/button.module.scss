@@ -1,0 +1,19 @@
+@use "/src/shared/styles/colors";
+
+.button {
+   width: 37px;
+   height: 36px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.3rem;
+   color: colors.$font-tertiary;
+   border: 2px solid colors.$border-primary;
+   border-radius: 50%;
+}
+
+.button-active {
+   border: none;
+   color: colors.$font-primary;
+   background-color: colors.$background-tertiary;
+}

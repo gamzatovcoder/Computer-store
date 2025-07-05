@@ -1,5 +1,9 @@
 @use "/src/shared/styles/colors";
 
+.header {
+   margin-bottom: 30px;
+}
+
 .header-top {
    background-color: colors.$background-primary;
 }
@@ -37,8 +41,12 @@
 }
 
 .header-bottom {
-   display: flex;
-   align-items: center;
+   padding: 25px 0 27px;
+   border-bottom: 1px solid colors.$border-primary;
+   .header-bottom__content {
+      display: flex;
+      align-items: center;
+   }
    .header-bottom__logo {
       width: 33.47px;
       height: 40px;

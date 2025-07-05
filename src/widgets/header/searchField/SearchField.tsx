@@ -1,5 +1,5 @@
 import styles from "./searchField.module.scss";
-import searchIcon from "@/shared/assets/icons/search.png";
+import searchIcon from "@/shared/assets/icons/search.svg";
 const SearchField = () => {
    return (
       <form className={styles["search-box"]}>

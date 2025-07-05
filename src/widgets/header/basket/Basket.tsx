@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./basket.module.scss";
-import basketIcon from "@/shared/assets/icons/basket.png";
+import basketIcon from "@/shared/assets/icons/basket.svg";
 
 const Basket = () => {
    return (
