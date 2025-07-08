@@ -6,8 +6,8 @@ import gridIcon from "@/shared/assets/icons/gridIcon.svg";
 import rowsIcon from "@/shared/assets/icons/rowsIcon.svg";
 import { useState } from "react";
 
-type Product = {
-   id: string;
+type ProductType = {
+   id: number;
    image: string;
    name: string;
    brand: string;
@@ -24,7 +24,7 @@ type Product = {
 type Props = {
    isLoading: boolean;
    error: FetchBaseQueryError | SerializedError;
-   products: Product[];
+   products: ProductType[];
 };
 const ProductList = ({ error, products, isLoading }: Props) => {
    const [layoutProducts, setLayoutProducts] = useState<"grid" | "rows">(
@@ -75,6 +75,7 @@ const ProductList = ({ error, products, isLoading }: Props) => {
                <ProductItem
                   styleRows={layoutProducts}
                   key={item.id}
+                  id={item.id}
                   name={item.name}
                   image={item.image}
                   price={item.price}

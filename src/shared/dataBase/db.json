@@ -1,7 +1,7 @@
 {
    "products": [
       {
-         "id": "1",
+         "id": 1,
          "image": "image1.jpg",
          "name": "Asus FA506NCR-HN057 15.6'' (90NR0JV7-M003X0)",
          "brand": "Apple",
@@ -15,7 +15,7 @@
          "price": 1999.99
       },
       {
-         "id": "2",
+         "id": 2,
          "image": "image2.jpg",
          "name": "Honor MagicBook Art14 2024 MRA-521 14.6'' (5301AKRU)",
          "brand": "Dell",
@@ -29,7 +29,7 @@
          "price": 1599.99
       },
       {
-         "id": "3",
+         "id": 3,
          "image": "image3.jpg",
          "name": "Apple MacBook Air 16/256Gb (MW0W3) Silver",
          "brand": "HP",
@@ -43,7 +43,7 @@
          "price": 1499.99
       },
       {
-         "id": "4",
+         "id": 4,
          "image": "image4.jpg",
          "name": "Maibenben S14A 14'' (S14A-R545UMB1SLURE0)",
          "brand": "Asus",
@@ -57,7 +57,7 @@
          "price": 1399.99
       },
       {
-         "id": "5",
+         "id": 5,
          "image": "image5.jpg",
          "name": "Asus TUF Gaming F15 FX507ZC4-HN143 15.6'' (90NR0GW1-M00B40)",
          "brand": "Lenovo",
@@ -71,7 +71,7 @@
          "price": 1699.99
       },
       {
-         "id": "6",
+         "id": 6,
          "image": "image6.jpg",
          "name": "Honor MagicBook Pro 16 HUNTER 2024 DRA-54 16'' (5301AJYK)",
          "brand": "Microsoft",
@@ -85,7 +85,7 @@
          "price": 1299.99
       },
       {
-         "id": "7",
+         "id": 7,
          "image": "image7.jpg",
          "name": "Asus VivoBook M3704YA-AU052 17.3'' (90NB1192-M00200)",
          "brand": "Razer",
@@ -99,7 +99,7 @@
          "price": 2299.99
       },
       {
-         "id": "8",
+         "id": 8,
          "image": "image8.jpg",
          "name": "Acer Extensa 15 EX215-23-R0GZ 15.6'' (NX.EH3CD.002)",
          "brand": "Acer",
@@ -113,7 +113,7 @@
          "price": 1599.99
       },
       {
-         "id": "9",
+         "id": 9,
          "image": "image9.jpg",
          "name": "Asus ROG ZEPHYRUS GU603VI 16'' (90NR0G35-M00680)",
          "brand": "Samsung",
@@ -127,7 +127,7 @@
          "price": 1299.99
       },
       {
-         "id": "10",
+         "id": 10,
          "image": "image10.jpg",
          "name": "Acer Nitro V ANV15-51-53R5 15.6'' (NH.QN9CD.00K)",
          "brand": "Apple",
@@ -141,7 +141,7 @@
          "price": 1199.99
       },
       {
-         "id": "11",
+         "id": 11,
          "image": "image11.jpg",
          "name": "Honor MagicBook Pro 16 HUNTER DRA-54 (5301AJBS)",
          "brand": "Dell",
@@ -155,7 +155,7 @@
          "price": 849.99
       },
       {
-         "id": "12",
+         "id": 12,
          "image": "image12.jpg",
          "name": "Lenovo IP3 Slim 15IAH8 15.6'' (83ER00GYUE)",
          "brand": "Lenovo",
@@ -169,7 +169,7 @@
          "price": 1799.99
       },
       {
-         "id": "13",
+         "id": 13,
          "image": "image13.jpg",
          "name": "Asus FX507VV Tianxuan 15.6'' (90NR0BVA-M00NC0)",
          "brand": "HP",
@@ -183,7 +183,7 @@
          "price": 1399.99
       },
       {
-         "id": "14",
+         "id": 14,
          "image": "image14.jpg",
          "name": "Xiaomi Redmi Book Pro 14 (4594CN)",
          "brand": "MSI",
@@ -197,7 +197,7 @@
          "price": 2499.99
       },
       {
-         "id": "15",
+         "id": 15,
          "image": "image15.jpg",
          "name": "Honor MagicBook X14 Plus 2025 FRB-X 14'' (5301ALXY)",
          "brand": "Google",
@@ -211,7 +211,7 @@
          "price": 649.99
       },
       {
-         "id": "16",
+         "id": 16,
          "image": "image16.jpg",
          "name": "Lenovo LOQ 15ARP9 15.6'' (83JC005ERK)",
          "brand": "Acer",
@@ -225,7 +225,7 @@
          "price": 799.99
       },
       {
-         "id": "17",
+         "id": 17,
          "image": "image17.jpg",
          "name": "Asus X1704VA-AU639 17.3'' (90NB10V2-M00RJ0) черный",
          "brand": "HP",
@@ -239,7 +239,7 @@
          "price": 899.99
       },
       {
-         "id": "18",
+         "id": 18,
          "image": "image18.jpg",
          "name": "GIGABYTE G6X 9MG 16'' (9MG-42KZ853SD)",
          "brand": "Asus",
@@ -253,7 +253,7 @@
          "price": 1999.99
       },
       {
-         "id": "19",
+         "id": 19,
          "image": "image19.jpg",
          "name": "Honor MagicBook Art14 2024 MRA-721 14.6'' (5301AKRY)",
          "brand": "MSI",
@@ -267,7 +267,7 @@
          "price": 1799.99
       },
       {
-         "id": "20",
+         "id": 20,
          "image": "image20.jpg",
          "name": "Samsung Galaxy Book2 Pro 360",
          "brand": "Samsung",

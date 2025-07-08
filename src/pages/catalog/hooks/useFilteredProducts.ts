@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAppSelector } from "@/shared/store/hooks";
 
 type ProductType = {
-   id: string;
+   id: number;
    image: string;
    name: string;
    brand: string;

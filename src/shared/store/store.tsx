@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import currentPageSlice from "@/pages/catalog/storeSlices/currentPageSlice";
-import { apiProducts } from "./services/apiProducts";
 import { setupListeners } from "@reduxjs/toolkit/query";
+import { apiProducts } from "./services/apiProducts";
+import currentPageSlice from "@/pages/catalog/storeSlices/currentPageSlice";
+import selectedProductReducer from "./slices/selectedProductSlice";
 
 export const store = configureStore({
    reducer: {
       currentPage: currentPageSlice,
+      selectedProduct: selectedProductReducer,
       [apiProducts.reducerPath]: apiProducts.reducer,
    },
    middleware: (getDefaultMiddleware) =>

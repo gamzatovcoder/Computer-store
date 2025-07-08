@@ -1,0 +1,19 @@
+@use "/src/shared/styles/colors";
+
+.submenu__title {
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: colors.$font-tertiary;
+   margin-bottom: 28px;
+}
+
+.submenu-list {
+   .submenu__item {
+      margin-bottom: 3px;
+   }
+   .submenu__link {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: colors.$font-secondary;
+   }
+}

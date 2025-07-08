@@ -3,8 +3,8 @@ import ContactUs from "./contactUs/ContactUs";
 import MainMenu from "./mainMenuList/MainMenu";
 import SearchField from "./searchField/SearchField";
 import Basket from "./basket/Basket";
-import facebookIcon from "@/shared/assets/icons/facebook.png";
 import logoIcon from "@/shared/assets/icons/logo.png";
+import MesssengerLinks from "../messengerLinks/MesssengerLinks";
 
 const Header = () => {
    return (
@@ -19,16 +19,12 @@ const Header = () => {
                   <div className={styles["our-contacts__phone"]}>
                      Call Us: (00) 0000 0000
                   </div>
-                  <a
-                     className={styles["our-contacts__messenger-link "]}
-                     href="https://www.facebook.com/"
-                  >
-                     <img
-                        className={styles["our-contacts__messenger-icon"]}
-                        src={facebookIcon}
-                        alt="facebook"
-                     />
-                  </a>
+                  <MesssengerLinks
+                     color="#FFFFFF"
+                     width="14.5px"
+                     height="14.5px"
+                     columnGap="12px"
+                  />
                </div>
             </div>
          </div>
