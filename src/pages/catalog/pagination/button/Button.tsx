@@ -9,12 +9,12 @@ const Button = ({ currentPage }: { currentPage: number }) => {
       return `${page === currentPage ? styles["button-active"] : ""}`;
    };
    return (
-      <div
+      <button
          onClick={() => dispatch(setCurrentPage(currentPage))}
          className={`${styles.button} ${getActiveButtonClass()}`}
       >
          {currentPage}
-      </div>
+      </button>
    );
 };
 

@@ -12,12 +12,12 @@ const form = () => {
                The operator calls back during business hours within 2 hours.
             </div>
             <div className={styles["form__input-box"]}>
-               <Input name={"userName"} placeholder={"name"} />
+               <Input name={"userName"} placeholder={"Name"} />
             </div>
             <div className={styles["form__input-box"]}>
                <Input
                   name={"userPhone"}
-                  placeholder={"name"}
+                  placeholder={"Phone"}
                   required={true}
                   fieldEmptyError={"fill in the phone number field"}
                   pattern={"[0-9]{9}"}

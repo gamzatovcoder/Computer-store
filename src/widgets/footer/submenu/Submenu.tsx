@@ -13,7 +13,7 @@ const Submenu = ({ submenuList }: Props) => {
          <h5 className={styles["submenu__title"]}>Information</h5>
          <ul className={styles["submenu-list"]}>
             {submenuList.map(({ name, link }) => (
-               <li className={styles["submenu__item"]}>
+               <li key={name} className={styles["submenu__item"]}>
                   <a className={styles["submenu__link"]} href={link}>
                      {name}
                   </a>

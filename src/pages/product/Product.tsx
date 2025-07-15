@@ -3,9 +3,8 @@ import { SerializedError } from "@reduxjs/toolkit";
 import { useAppSelector } from "@/shared/store/hooks";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import { useGetProductsQuery } from "@/shared/store/services/apiProducts";
-import { useEffect } from "react";
 
-type Product = {
+type ProductType = {
    id: number;
    image: string;
    name: string;
@@ -21,7 +20,7 @@ type Product = {
 };
 
 type GetProductsType = {
-   data: Product[];
+   data: ProductType[];
    isLoading: boolean;
    error: FetchBaseQueryError | SerializedError;
 };

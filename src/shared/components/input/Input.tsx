@@ -4,6 +4,9 @@ import InputErrorMessage from "./inputErrorMessage/InputErrorMessage";
 import { useFieldValidation } from "./useFieldValidation";
 type Props = {
    name: string;
+   setInputState?: React.Dispatch<
+      React.SetStateAction<string | number | boolean>
+   >;
    id?: string;
    placeholder?: string;
    otherAttributes?: InputHTMLAttributes<HTMLInputElement>;
@@ -18,6 +21,7 @@ type Props = {
 
 const Input = ({
    name,
+   setInputState,
    id,
    placeholder,
    required,
@@ -28,7 +32,9 @@ const Input = ({
 }: Props) => {
    const { inputRef, isFieldEmpty, isFieldInvalid, onBlur, onChange } =
       useFieldValidation();
-
+   const handleChangeInputState = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setInputState(e.target.value);
+   };
    return (
       <div>
          <input
@@ -38,7 +44,10 @@ const Input = ({
             name={name}
             required={required}
             pattern={pattern}
-            onChange={onChange}
+            onChange={(e) => {
+               onChange();
+               handleChangeInputState(e);
+            }}
             onBlur={onBlur}
             placeholder={placeholder}
             {...otherAttributes}

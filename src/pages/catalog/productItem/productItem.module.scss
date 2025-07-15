@@ -1,13 +1,12 @@
 @use "/src/shared/styles/colors";
 
-.product-item {
+.product {
    background-color: colors.$background-tertiary;
    padding: 26px 24px 24px;
    border-radius: 16px;
    box-shadow: 0 1px 2px #0000001a;
-   .product-item__image {
+   .product__image {
       display: block;
-      margin: 0 auto;
       height: 150px;
       margin: 0 auto 10px;
       cursor: pointer;
@@ -25,6 +24,7 @@
    line-clamp: 2;
    height: 40px;
    margin-bottom: 10px;
+   color: colors.$font-primary;
 }
 .description__price {
    margin-bottom: 20px;
@@ -52,13 +52,13 @@
 
 .add-button_active {
    border: none;
-   background-color: colors.$background-tertiary;
+   background-color: rgba(colors.$background-primary, 0.1);
 }
-.product-item_rows {
+.product_rows {
    display: flex;
    justify-content: start;
 
-   .product-item__image {
+   .product__image {
       height: 200px;
       margin: 0 30px 0 0;
    }
@@ -70,7 +70,7 @@
       justify-content: center;
    }
    .description__text {
-      line-height: 25px;
+      line-height: 20px;
       font-size: 1.7rem;
    }
    .description__price {
