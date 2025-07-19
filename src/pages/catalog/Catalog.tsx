@@ -9,9 +9,11 @@ import { useGetProductsQuery } from "@/shared/store/services/apiProducts";
 
 const Catalog = () => {
    const { data: products, isLoading, error } = useGetProductsQuery();
-   const { totalPages } = usePagination(products?.length);
    const { filtersList } = useFilterList(products);
-   const { currentProducts, setFilters } = useFilteredProducts(products);
+   const { currentProducts, filteredProducts, setFilters } =
+      useFilteredProducts(products);
+   const { totalPages } = usePagination(filteredProducts?.length, 10);
+
    return (
       <section className={styles.catalog + " container"}>
          <div className={styles["filter-box"]}>

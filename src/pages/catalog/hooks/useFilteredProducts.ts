@@ -66,7 +66,7 @@ const useFilteredProducts = (products: ProductType[]) => {
       );
    }, [currentPage, filteredProducts]);
 
-   return { currentProducts, setFilters };
+   return { currentProducts, filteredProducts, setFilters };
 };
 
 export default useFilteredProducts;
