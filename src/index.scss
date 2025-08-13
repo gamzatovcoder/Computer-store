@@ -26,11 +26,25 @@ button {
    font-family: fonts.$primary;
    cursor: pointer;
 }
+.container {
+   margin: 0 auto;
+   padding: 0 25px;
 
-@media (min-width: 1441px) {
-   .container {
+   @media (max-width: 768px) {
+      max-width: calc(100% - 10px);
+      // padding: 0 25px;
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      min-width: 760px;
+      max-width: 900px;
+   }
+
+   @media (min-width: 1025px) and (max-width: 1440px) {
+      min-width: 1012px;
+      max-width: 1140px;
+   }
+   @media (min-width: 1441px) {
       width: 1398px;
-      padding: 0 25px;
-      margin: 0 auto;
    }
 }

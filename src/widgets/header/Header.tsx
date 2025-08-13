@@ -1,7 +1,6 @@
 import styles from "./header.module.scss";
 import ContactUs from "./contactUs/ContactUs";
 import MainMenu from "./mainMenuList/MainMenu";
-import SearchField from "./searchField/SearchField";
 import Basket from "./basket/Basket";
 import logoIcon from "@/shared/assets/icons/logo.png";
 import MesssengerLinks from "../messengerLinks/MesssengerLinks";
@@ -38,9 +37,7 @@ const Header = () => {
                <div className={styles["header-bottom__main-menu-box"]}>
                   <MainMenu />
                </div>
-               <div className={styles["header-bottom__search-field-box"]}>
-                  <SearchField />
-               </div>
+
                <Basket />
             </div>
          </div>

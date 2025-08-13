@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./productItem.module.scss";
 import addToCartIcon from "@/shared/assets/icons/addToCart.svg";
 import { useAppDispatch, useAppSelector } from "@/shared/store/hooks";
@@ -35,10 +34,15 @@ const ProductItem = ({
       state.cartProducts.some((product) => product.id === id),
    );
 
-   const getActiveRowsClass = () => {
-      return `${styleRows === "rows" ? styles["product_rows"] : ""}`;
+   const ob = {
+      name: "namee",
+      age: 18,
    };
+   type cl = typeof ob;
 
+   const getActiveRowsClass = () => {
+      return `${styleRows === "rows" || window.innerWidth < 768 ? styles["product_rows"] : ""}`;
+   };
    return (
       <div className={`${styles["product"]} ${getActiveRowsClass()}`}>
          <Link to={"/product"}>

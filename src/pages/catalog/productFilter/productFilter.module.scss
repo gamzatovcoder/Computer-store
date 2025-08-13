@@ -4,6 +4,10 @@
    width: 300px;
    background-color: colors.$background-tertiary;
    padding: 18px 18px 20px 16px;
+   @media (min-width: 1025px) and (max-width: 1440px) {
+      width: 250px;
+   }
+
    .filter__title {
       margin-bottom: 18px;
       font-size: 1.6rem;
